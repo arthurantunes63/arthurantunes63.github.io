@@ -1,0 +1,194 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Definição para todo cabeçalho */
+header {
+    color: black;
+    padding: 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+/* Definição da tag main para ocupar toda
+a porção da página até o footer, considerando que
+este está definido com uma posição absoluta no bottom 
+*/
+main {
+    flex: 1;
+}
+
+
+/* Definição de estilo para os itens que irão compor o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2vh 0;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.social-media {
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+.watermark {
+    font-size: 14px;
+}
+
+/* Definições de estilo para a barra de navegação.
+O display flex foi empregue para manter os itens do
+menu centralizado.
+O mouse ao estar localizado em qualquer item do menu deverá
+mudar de cor com uma transição (hover + transition). 
+*/
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 5vw;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8400c2;
+}
+
+
+/*
+Definições de estilo para o formulário
+*/
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    margin: 0 auto;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 1rem);
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1vh;
+    border: none;
+    border-radius: 4px;
+    background-color: #b77fd1;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family:'Courier New', Courier, monospace;
+}
+
+input[type="submit"]:hover {
+    background-color: #8400c2;
+    
+}
+
+textarea {
+    resize: none;
+}
+
+/* Classe geral container para lidarmos com mais de um cenário*/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Definições de estilo para os cards de projetos */
+.project {
+    background-color: #b77fd1;
+    border: 1px solid #6f4882;
+    border-radius: 5px;
+    margin: 2rem;
+    padding: 1em;
+    width: 50vh;
+    height: fit-content;
+}
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.project h3 {
+    margin-top: 0;
+}
+
+/* Definições de estilo para compor os itens que
+irão compor a linha do tempo de minha educação
+*/
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timeline > span {
+    background-color: #b77fd1;
+    padding: 2vh;
+}
+
+/*
+Definições específicas para a introdução em index.html
+*/
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction > img {
+    width: 25vw;
+}
+
+.content {
+    margin: 3vw;
+}
