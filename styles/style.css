@@ -1,5 +1,5 @@
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 }
@@ -110,7 +110,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input[type="submit"] {
@@ -123,12 +123,12 @@ input[type="submit"] {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input[type="submit"]:hover {
     background-color: #8400c2;
-    
+
 }
 
 textarea {
@@ -152,12 +152,22 @@ textarea {
     width: 50vh;
     height: fit-content;
 }
+
 .project img {
     max-width: 100%;
     border-radius: 5px;
 }
+
 .project h3 {
     margin-top: 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    margin: 0;
 }
 
 /* Definições de estilo para compor os itens que
@@ -171,8 +181,9 @@ irão compor a linha do tempo de minha educação
     align-items: center;
 }
 
-.timeline > span {
+.timeline>span {
     background-color: #b77fd1;
+    border: 1px solid #6f4882;
     padding: 2vh;
 }
 
@@ -185,10 +196,12 @@ Definições específicas para a introdução em index.html
     justify-content: center;
 }
 
-.introduction > img {
+.introduction>img {
     width: 25vw;
 }
 
 .content {
     margin: 3vw;
 }
+
+
